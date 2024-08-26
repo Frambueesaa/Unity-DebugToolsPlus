@@ -12,13 +12,17 @@ This allows you to differentiate your messages by color and thus find errors fas
 
 # How do I import it?
 
-You have two ways to import it, using the attached UnityPackage or import manually.
+You have three ways to import it, using the attached UnityPackage or import manually.
 
-## Unity Package
+## 1 Unity Custom Git Package
+
+Navigate to the Package Manager window within the Editor, once inside select the option "Add package from git URL" and paste this: https://github.com/franforge/unity-formatted-debug-texts.git#main
+
+## 2 Unity Package
 
 Download the package and drag/select import into the Unity editor.
 
-## Import Manually
+## 3 Import Manually
 
 Donwload the archives and drag/select import into the Unity editor.
 
