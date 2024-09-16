@@ -53,6 +53,46 @@ namespace CustomDebug
         /// </summary>
         /// <param name="title"> Titulo del mensaje </param>
         /// <param name="message"> Contenido del mensaje </param>
+        public static void Log(string title, string message)
+        {
+            Log(title, message, 1);
+        }
+
+        /// <summary>
+        /// Muestra en consola con formato los mensajes para mayor legibilidad.
+        /// </summary>
+        /// <param name="title"> Titulo del mensaje </param>
+        /// <param name="message"> Contenido del mensaje </param>
+        public static void Log(string title, string message, Object contextObj)
+        {
+            Log(title, message, contextObj, 1);
+        }
+
+        /// <summary>
+        /// Muestra en consola con formato los mensajes para mayor legibilidad.
+        /// </summary>
+        /// <param name="title"> Titulo del mensaje </param>
+        /// <param name="message"> Contenido del mensaje </param>
+        public static void Log(string title, string message, DebugType debugType)
+        {
+            Log(title, message, 1, debugType);
+        }
+
+        /// <summary>
+        /// Muestra en consola con formato los mensajes para mayor legibilidad.
+        /// </summary>
+        /// <param name="title"> Titulo del mensaje </param>
+        /// <param name="message"> Contenido del mensaje </param>
+        public static void Log(string title, string message, Object contextObj, DebugType debugType)
+        {
+            Log(title, message, contextObj, 1, debugType);
+        }
+
+        /// <summary>
+        /// Muestra en consola con formato los mensajes para mayor legibilidad.
+        /// </summary>
+        /// <param name="title"> Titulo del mensaje </param>
+        /// <param name="message"> Contenido del mensaje </param>
         /// <param name="color"> Codigo de color del mensaje (0 - ColorLength) </param>
         public static void Log(string title, string message, int color)
         {
