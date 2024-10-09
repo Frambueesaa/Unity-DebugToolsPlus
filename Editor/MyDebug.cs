@@ -55,7 +55,7 @@ namespace CustomDebug
         /// <param name="message"> Contenido del mensaje </param>
         public static void Log(string title, string message)
         {
-            Log(title, message, 1);
+            Log(title, message, 0);
         }
 
         /// <summary>
@@ -65,7 +65,7 @@ namespace CustomDebug
         /// <param name="message"> Contenido del mensaje </param>
         public static void Log(string title, string message, Object contextObj)
         {
-            Log(title, message, contextObj, 1);
+            Log(title, message, contextObj, 0);
         }
 
         /// <summary>
@@ -167,6 +167,96 @@ namespace CustomDebug
                     Debug.LogError($"<b>{colorOpen}[{title}]</color></b> {message}", contextObj);
                     break;
             }
+        }
+
+        /// <summary>
+        /// Muestra en consola con formato los mensajes marcando un error.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="message"></param>
+        public static void LogWarn(string title, string message)
+        {
+            Log(title, message, 0, debugType.WARN);
+        }
+
+        /// <summary>
+        /// Muestra en consola con formato los mensajes marcando un error.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="message"></param>
+        /// <param name="color"></param>
+        public static void LogWarn(string title, string message, int color)
+        {
+            Log(title, message, color, debugType.WARN);
+        }
+
+        /// <summary>
+        /// Muestra en consola con formato los mensajes marcando un error.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="message"></param>
+        /// <param name="color"></param>
+        /// <param name="contextObj"></param>
+        public static void LogWarn(string title, string message, Object contextObj)
+        {
+            Log(title, message, contextObj, debugType.WARN);
+        }
+        
+        /// <summary>
+        /// Muestra en consola con formato los mensajes marcando un error.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="message"></param>
+        /// <param name="color"></param>
+        /// <param name="contextObj"></param>
+        public static void LogWarn(string title, string message, Object contextObj, int color)
+        {
+            Log(title, message, contextObj, color, debugType.WARN);
+        }
+        
+        /// <summary>
+        /// Muestra en consola con formato los mensajes marcando un error.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="message"></param>
+        public static void LogError(string title, string message)
+        {
+            Log(title, message, 0, debugType.ERROR);
+        }
+
+        /// <summary>
+        /// Muestra en consola con formato los mensajes marcando un error.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="message"></param>
+        /// <param name="color"></param>
+        public static void LogError(string title, string message, int color)
+        {
+            Log(title, message, color, debugType.ERROR);
+        }
+
+        /// <summary>
+        /// Muestra en consola con formato los mensajes marcando un error.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="message"></param>
+        /// <param name="color"></param>
+        /// <param name="contextObj"></param>
+        public static void LogError(string title, string message, Object contextObj)
+        {
+            Log(title, message, contextObj, debugType.ERROR);
+        }
+        
+        /// <summary>
+        /// Muestra en consola con formato los mensajes marcando un error.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="message"></param>
+        /// <param name="color"></param>
+        /// <param name="contextObj"></param>
+        public static void LogError(string title, string message, Object contextObj, int color)
+        {
+            Log(title, message, contextObj, color, debugType.ERROR);
         }
     }
 }
