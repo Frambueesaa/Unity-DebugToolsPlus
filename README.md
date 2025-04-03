@@ -14,8 +14,7 @@
 
 ## Installation
 
-1. Download or clone this repository.
-2. Import the package into your Unity project via the Unity Asset Store or directly into the project’s `Assets` folder.
+1. Import the package into your Unity project via the Unity Asset Store or directly into the projectâ€™s `Assets` folder.
 
 ## Usage
 
